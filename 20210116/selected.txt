@@ -1,0 +1,15 @@
+OK * Substring 1: Length of the longest common substrings of two strings.
+OK * Subsequences 1: Length of the longest common subsequence of two strings.
+OK * Binary Search: Find if $n$ is in a sorted array of integers in log steps
+OK * Permutations: Find all permutations of a given set.
+-> don't forget to:
+
+- for each element in the set
+- remove the element
+- find all permutations for the remaining set
+- and add the element again.
+
+- use lists to represent the sets in python, since sets are unordered
+- be sure to use non-destructive methods such as filter to remove an element and use a + b instead of append
+
+* Count Change: Count the number of ways to make change for 100 cent if you have [1, 5, 10, 25, 50] cent coins (SICP)
