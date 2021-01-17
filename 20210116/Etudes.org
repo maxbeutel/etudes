@@ -1,0 +1,11 @@
+* Binary Search: Find if $n$ is in a sorted array of integers in log steps
+* Count Change: Count the number of ways to make change for 100 cent if you have [1, 5, 10, 25, 50] cent coins (SICP)
+* Expmod: Create a function that raises a base b to a power p modulo m. (SICP)
+* Powerset: Find all subsets of a given set.
+* Permutations: Find all permutations of a given set.
+* Substring 1: Length of the longest common substrings of two strings.
+* TODO Substring 2: Find all substrings of a string
+* Subsequences 1: Length of the longest common subsequence of two strings.
+* Knapsack Problem: What items should you steal so that you steal the maximum money’s worth of goods?  (4 lb/3000, 3 lb/2000, 1 lb/1500)
+* TODO Subsequences 2: Find all subsequences of a string
+* TODO 8-Queens puzzle: How to place 8 queens on a chessboard that all of them are in safe positions. (SICP p. 124)

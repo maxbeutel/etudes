@@ -90,13 +90,32 @@ def permutations(S):
     if len(S) == 0:
         return [[]]
 
-    ret = []
-
-    for a in S:
-        for perm in permutations(list(filter(lambda x: x != a, S))):
-            ret.append(perm + [a])
-
-    return ret
+    return [
+        perm + [a]
+        for a in S
+        for perm in permutations(list(filter(lambda x: x != a, S)))
+    ]
 
 for S, expected in tests:
-    assert len(permutations(S)) == len(expected)
+    assert str(sorted(permutations(S))) == str(sorted(expected))
+
+# * Count Change: Count the number of ways to make change for 100 cent if you have [1, 5, 10, 25, 50] cent coins (SICP)
+
+tests = [
+    ([1, 5, 10, 25, 50], 100, 292),
+]
+
+def count_change(coins:Iterable[int], amount:int)->int:
+    if len(coins) == 0:
+        return 0
+
+    if amount < 0:
+        return 0
+
+    if amount == 0:
+        return 1
+
+    return count_change(coins, amount - coins[0]) + count_change(coins[1:], amount)
+
+for coins, amount, expected in tests:
+    assert count_change(coins, amount) == expected
