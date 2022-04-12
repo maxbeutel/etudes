@@ -1,6 +1,9 @@
-etudes_file="$1"
+#!/bin/bash
 
-selected=$(grep '^\* ' "$etudes_file" | grep -v TODO | sort -R | head -n 5)
+etudes_file="$1"
+num="$2"
+
+selected=$(grep '^\* ' "$etudes_file" | grep -v TODO | sort -R | head -n "$num")
 dir=$(date +%Y%m%d)
 
 mkdir -p "$dir"

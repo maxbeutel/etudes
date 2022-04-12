@@ -9,3 +9,5 @@
 * Knapsack Problem: What items should you steal so that you steal the maximum money’s worth of goods?  (4 lb/3000, 3 lb/2000, 1 lb/1500)
 * TODO Subsequences 2: Find all subsequences of a string
 * TODO 8-Queens puzzle: How to place 8 queens on a chessboard that all of them are in safe positions. (SICP p. 124)
+* Dijkstras algorithm: Find shortest path in a graph
+* Implement the dot product of two vectors, tail-recursive and not tail-recursive

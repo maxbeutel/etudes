@@ -1,0 +1,2 @@
+* Implement the dot product of two vectors, tail-recursive and not tail-recursive 
+* Binary Search: Find if $n$ is in a sorted array of integers in log steps
